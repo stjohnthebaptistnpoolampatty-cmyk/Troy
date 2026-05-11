@@ -362,7 +362,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 32px;
-            align-items: start
+            align-items: stretch
         }
 
         @media(max-width:900px) {
@@ -498,13 +498,13 @@
 
         .qr-col {
             flex-shrink: 0;
-            width: 200px;
+            width: 220px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             border-left: 1px dashed #e0d8cc;
-            padding-left: 16px;
+            padding-left: 24px;
             gap: 8px
         }
 
@@ -518,11 +518,11 @@
         }
 
         .qr-wrap-lg {
-            width: 180px;
-            height: 180px;
+            width: 190px;
+            height: 190px;
             border-radius: 10px;
             border: 2px solid var(--gold);
-            padding: 2px;
+            padding: 4px;
             background: #fff;
             overflow: hidden
         }
@@ -536,13 +536,12 @@
 
         .upi-full-row {
             margin-top: 16px;
-            padding-top: 14px;
+            padding-top: 18px;
             border-top: 1px dashed #e0d8cc;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 10px
+            gap: 16px
         }
 
         .upi-id-lg {
@@ -1191,6 +1190,276 @@
             font-size: 0.78rem;
             opacity: 0.55
         }
+
+        /* TIMINGS */
+        .timings-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        @media(max-width:900px) {
+            .timings-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .timing-card {
+            background: #fff;
+            border-radius: var(--r);
+            padding: 32px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid var(--gold);
+            transition: all .3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .timing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+            border-top-color: var(--teal);
+        }
+
+        .timing-icon {
+            font-size: 2.2rem;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .timing-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--deep);
+            margin-bottom: 4px;
+        }
+
+        .timing-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .timing-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+            color: var(--muted);
+            padding-bottom: 10px;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+        }
+
+        .timing-item:last-child {
+            border-bottom: none;
+        }
+
+        .timing-label {
+            font-weight: 700;
+            color: var(--deep);
+        }
+
+        .timing-value {
+            color: var(--teal);
+            font-weight: 700;
+            background: var(--off-wh);
+            padding: 2px 10px;
+            border-radius: 4px;
+        }
+
+        .special-prayers {
+            margin-top: 8px;
+            font-size: 0.82rem;
+            color: var(--muted);
+            background: var(--off-wh);
+            padding: 16px;
+            border-radius: 12px;
+            border-left: 3px solid var(--gold);
+        }
+
+        .special-prayers strong {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--teal);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .special-prayers ul {
+            list-style: none;
+            margin-top: 8px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+        }
+
+        .special-prayers li {
+            position: relative;
+            padding-left: 12px;
+        }
+
+        .special-prayers li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+        }
+
+        .annadhanam-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+            color: var(--deep);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 12px rgba(201, 146, 42, 0.2);
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #25D366;
+            color: #fff !important;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all .3s ease;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4) !important;
+        }
+
+        /* PREMIUM BILINGUAL SECTION */
+        .premium-info-card {
+            background: #fff;
+            border-radius: 24px;
+            border: 1px solid rgba(201, 146, 42, 0.15);
+            box-shadow: 0 15px 50px rgba(11, 28, 36, 0.06);
+            overflow: hidden;
+            margin-top: 60px;
+            width: 100%;
+            position: relative;
+        }
+
+        .premium-info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-lt), var(--gold));
+        }
+
+        .pi-head {
+            padding: 40px 40px 20px;
+            text-align: center;
+        }
+
+        .pi-head h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--deep);
+            margin-bottom: 8px;
+        }
+
+        .pi-head .pi-tamil-title {
+            font-family: 'Arima', cursive;
+            font-size: 1.1rem;
+            color: var(--teal);
+            font-weight: 600;
+        }
+
+        .pi-body {
+            padding: 0 40px 40px;
+        }
+
+        .pi-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 32px;
+            position: relative;
+        }
+
+        .pi-grid::after {
+            content: '';
+            position: absolute;
+            top: 10%;
+            bottom: 10%;
+            left: 50%;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, rgba(201, 146, 42, 0.2), transparent);
+            transform: translateX(-50%);
+        }
+
+        @media(max-width: 768px) {
+            .pi-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .pi-grid::after {
+                display: none;
+            }
+        }
+
+        .pi-col h4 {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+
+        .pi-col p {
+            font-size: 0.98rem;
+            line-height: 1.8;
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        .pi-footer {
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .wa-btn-pro {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #25D366;
+            color: #fff !important;
+            padding: 14px 36px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25);
+        }
+
+        .wa-btn-pro:hover {
+            background: #128C7E !important;
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35) !important;
+        }
     </style>
 </head>
 
@@ -1204,6 +1473,8 @@
             <li><a href="#leaders">Leaders</a></li>
             <li><a href="#priests">Priests</a></li>
             <li><a href="#festivals">Festivals</a></li>
+            <li><a href="#timings">Timings</a></li>
+            <li><a href="#churchGallery">Gallery</a></li>
             <li><a href="#location">Location</a></li>
             <li><a href="#donation" class="nav-donate">Donate</a></li>
         </ul>
@@ -1230,6 +1501,7 @@
             Scroll
         </div>
     </header>
+
 
     <!-- DONATION -->
     <section class="section" id="donation">
@@ -1292,6 +1564,36 @@
                                 <span class="pay-badge">GPay</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PREMIUM BILINGUAL INFO CARD -->
+            <div class="premium-info-card">
+                <div class="pi-head">
+                    <h3>Community & Renovation Updates</h3>
+                    <p class="pi-tamil-title">ஆலயப் புதுப்பித்தல் & சமூகக் குழு விவரங்கள்</p>
+                </div>
+                <div class="pi-body">
+                    <div class="pi-grid">
+                        <div class="pi-col">
+                            <h4>English Instructions</h4>
+                            <p>"Join our dedicated WhatsApp community to receive official renovation updates,
+                                architectural blueprints, and financial transparency reports. Stay connected as we
+                                rebuild our sacred space together."</p>
+                        </div>
+                        <div class="pi-col">
+                            <h4>தமிழ் வழிமுறைகள்</h4>
+                            <p>"ஆலயப் புதுப்பித்தல் பணிகளின் முன்னேற்றம் மற்றும் நிதி அறிக்கைகளை உடனுக்குடன்
+                                தெரிந்துகொள்ள, எமது அதிகாரப்பூர்வ வாட்ஸ்அப் குழுவில் இணையுங்கள். எமது புனிதப் பணியில்
+                                உங்களையும் இணைத்துக் கொள்ளுங்கள்."</p>
+                        </div>
+                    </div>
+                    <div class="pi-footer">
+                        <a href="https://chat.whatsapp.com/CNwPiHaQ5C3B1z5Y0bsZ4Z" target="_blank" class="wa-btn-pro">
+                            <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Join Community Group / குழுவில்
+                            இணையுங்கள்
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1378,6 +1680,11 @@
                     <img src="images/Rev. Fr. Sunder Raj.JPG" class="leader-photo" alt="">
                     <div class="leader-name">Rev. Fr. T. L. Sundarraj</div>
                     <div class="leader-role">Old Church Builder(1966)</div>
+                </div>
+                <div class="leader-card">
+                    <img src="images/Fr.chinapan.jpeg" class="leader-photo" alt="">
+                    <div class="leader-name">Rev. Fr. A.Chinnapan</div>
+                    <div class="leader-role">New Church Builder(2026)</div>
                 </div>
             </div>
         </div>
@@ -1495,21 +1802,21 @@
                         </tr>
                         <tr class="current-row">
                             <td>2024 – Present</td>
-                            <td>Rev. Fr. ஆ. சின்னப்பன் <span class="current-badge">Current</span></td>
+                            <td>Rev. Fr. ஆ. சின்னப்பன்</td>
                         </tr>
                         <tr class="current-row">
                             <td>2024 – Present</td>
-                            <td>Sr. விசுவாசம் <span class="current-badge" style="background:var(--pink)">Current</span>
+                            <td>Sr. விசுவாசம் </span>
                             </td>
                         </tr>
                         <tr class="current-row">
-                            <td>2024 – Present</td>
-                            <td>Sr. மிக்கேலம்மாள் <span class="current-badge"
-                                    style="background:var(--pink)">Current</span></td>
+                            <td>2020 – Present</td>
+                            <td>Sr. மிக்கேலம்மாள்
+                            </td>
                         </tr>
                         <tr class="current-row">
-                            <td>2024 – Present</td>
-                            <td>Sr. ராஜம்மாள் <span class="current-badge" style="background:var(--pink)">Current</span>
+                            <td>2020 – Present</td>
+                            <td>Sr. ராஜம்மாள் ></span>
                             </td>
                         </tr>
                     </tbody>
@@ -1638,6 +1945,88 @@
         </div>
     </section>
 
+    <!-- SERVICE TIMINGS -->
+    <section class="section" id="timings">
+        <div class="wrap">
+            <div class="sec-title">
+                <span class="label">Worship With Us</span>
+                <h2>Service <em>Timings</em></h2>
+                <p class="sub">திருப்பலி மற்றும் வழிபாட்டு நேரங்கள்</p>
+                <hr>
+            </div>
+            <div class="timings-grid">
+                <!-- Daily & Sunday Mass -->
+                <div class="timing-card">
+                    <span class="timing-icon">⛪</span>
+                    <h3>Holy Mass</h3>
+                    <p style="font-size: 0.85rem; color: var(--muted); margin-top: -12px;">திருப்பலி நேரங்கள்</p>
+                    <div class="timing-list">
+                        <div class="timing-item">
+                            <span class="timing-label">Every Day</span>
+                            <span class="timing-value">7:00 PM</span>
+                        </div>
+                        <div class="timing-item">
+                            <span class="timing-label">Sunday (First)</span>
+                            <span class="timing-value">5:30 AM</span>
+                        </div>
+                        <div class="timing-item">
+                            <span class="timing-label">Sunday (Second)</span>
+                            <span class="timing-value">8:30 AM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Friday Special Service -->
+                <div class="timing-card">
+                    <span class="timing-icon">🙏</span>
+                    <h3>Friday Special</h3>
+                    <p style="font-size: 0.85rem; color: var(--muted); margin-top: -12px;">வெள்ளிக்கிழமை சிறப்பு வழிபாடு
+                    </p>
+                    <div class="timing-list">
+                        <div class="timing-item">
+                            <span class="timing-label">Every Friday</span>
+                            <span class="timing-value">7:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="special-prayers">
+                        <strong>Special Holy Mass & Novena</strong>
+                        Novena Prayer (நவநாள் பிரார்த்தனை) with special prayers for:
+                        <ul>
+                            <li>Health issues</li>
+                            <li>Skin diseases</li>
+                            <li>Family problems</li>
+                            <li>Child blessing</li>
+                            <li>Marriage obstacles</li>
+                            <li>Personal intentions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- First Friday Annadhanam -->
+                <div class="timing-card">
+                    <span class="timing-icon">🍛</span>
+                    <h3>First Friday Blessing</h3>
+                    <p style="font-size: 0.85rem; color: var(--muted); margin-top: -12px;">அன்னதானம்</p>
+                    <div class="timing-list" style="margin-bottom: 8px;">
+                        <div class="timing-item">
+                            <span class="timing-label">Monthly Basis</span>
+                            <span class="timing-value">அன்னதானம்</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.6;">
+                        On every month's <strong>First Friday</strong>, food service (அன்னதானம்) is organized
+                        and open for all people.
+                    </p>
+                    <div style="margin-top: auto;">
+                        <span class="annadhanam-badge">Open for All People</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gold-divider"></div>
+
     <!-- GALLERY -->
     <section class="section">
         <div class="wrap">
@@ -1649,26 +2038,38 @@
             </div>
             <div class="gallery-wrap" id="churchGallery">
                 <div class="gallery-slider" id="gallerySlider">
-                    <!-- Slides are rendered from gallery/ folder list below -->
                     <div class="gallery-slide active" data-caption="New Church Design"
                         data-sub="The vision of our upcoming sacred space.">
-                        <img src="gallery/church-new.jpeg" alt="New Church">
-                    </div>
-                    <div class="gallery-slide" data-caption="Community &amp; Faith"
-                        data-sub="Celebrating our shared spiritual journey.">
-                        <img src="gallery/church-new111.jpeg" alt="Community">
+                        <img src="Gallery/church-new111.jpeg" alt="New Church">
                     </div>
                     <div class="gallery-slide" data-caption="Patron Saint"
                         data-sub="The blessed statue of St. John the Baptist.">
-                        <img src="gallery/st.john_old.jpeg" alt="St. John">
+                        <img src="Gallery/st.john_old.jpeg" alt="St. John">
                     </div>
-                    <!-- Add more slides by copying the block above and placing images in gallery/ folder -->
+                    <div class="gallery-slide" data-caption="Sacred Moments"
+                        data-sub="Community gathering at our beloved parish.">
+                        <img src="Gallery/WhatsApp Image 2026-04-30 at 5.04.21 PM.jpeg" alt="Parish Moments">
+                    </div>
+                    <div class="gallery-slide" data-caption="Parish Community" data-sub="United in faith and devotion.">
+                        <img src="Gallery/WhatsApp Image 2026-04-30 at 5.04.23 PM.jpeg" alt="Community">
+                    </div>
+                    <div class="gallery-slide" data-caption="Church Events" data-sub="Celebrating faith together.">
+                        <img src="Gallery/WhatsApp Image 2026-05-06 at 11.18.24 AM (1).jpeg" alt="Church Events">
+                    </div>
+                    <div class="gallery-slide" data-caption="Moments of Grace"
+                        data-sub="Special occasions at St. John the Baptist.">
+                        <img src="Gallery/WhatsApp Image 2026-05-06 at 11.18.24 AM.jpeg" alt="Moments">
+                    </div>
+                    <div class="gallery-slide" data-caption="Parish Life"
+                        data-sub="The heart of our community at N. Poolampatty.">
+                        <img src="Gallery/WhatsApp Image 2026-05-09 at 6.30.25 PM.jpeg" alt="Parish Life">
+                    </div>
                 </div>
                 <div class="gallery-caption" id="galleryCaption">
                     <h5 id="galleryCaptionTitle">New Church Design</h5>
                     <p id="galleryCaptionSub">The vision of our upcoming sacred space.</p>
                 </div>
-                <div class="gallery-counter" id="galleryCounter">1 / 3</div>
+                <div class="gallery-counter" id="galleryCounter">1 / 7</div>
                 <button class="gallery-nav prev" id="galleryPrev" aria-label="Previous">&#8249;</button>
                 <button class="gallery-nav next" id="galleryNext" aria-label="Next">&#8250;</button>
                 <div class="gallery-dots" id="galleryDots"></div>
@@ -1709,6 +2110,8 @@
                                 class="fab fa-youtube"></i></a>
                         <a href="https://www.instagram.com/n_poolampatty?igsh=MWh2ajFrendtdTZmcw%3D%3D"
                             class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://chat.whatsapp.com/CNwPiHaQ5C3B1z5Y0bsZ4Z" class="social-btn"
+                            title="Join WhatsApp Group"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div>
@@ -1718,6 +2121,8 @@
                 </div>
                 <div>
                     <h5>Quick Links</h5>
+                    <a href="#timings" class="footer-link">→ Service Timings</a>
+                    <a href="#churchGallery" class="footer-link">→ Photo Gallery</a>
                     <a href="#donation" class="footer-link">→ Support Renovation</a>
                     <a href="#history" class="footer-link">→ Church History</a>
                     <a href="#leaders" class="footer-link">→ Spiritual Leaders</a>
