@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. John the Baptist Church | N. Poolampatty</title>
+    <meta name="description"
+        content="St. John the Baptist Church, N. Poolampatty, Tiruchirapalli Diocese — Mass timings, church history, festivals, gallery and renovation donation details.">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;700&family=Arima:wght@400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --gold: #c9922a;
@@ -812,6 +815,21 @@
             vertical-align: middle
         }
 
+        /* NAME: ENGLISH + TAMIL SMALL */
+        .name-ta {
+            display: block;
+            font-family: 'Arima', cursive;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: var(--muted);
+            margin-top: 2px;
+            letter-spacing: 0
+        }
+
+        .priest-spotlight .name-ta {
+            color: var(--gold-lt)
+        }
+
         /* VOCATIONS */
         .vocation-grid {
             display: grid;
@@ -841,6 +859,41 @@
 
         .voc-card.sis {
             border-left-color: var(--pink)
+        }
+
+        .voc-group {
+            margin-bottom: 34px
+        }
+
+        .voc-group:last-child {
+            margin-bottom: 0
+        }
+
+        .voc-group-title {
+            font-size: 1rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--deep);
+            margin: 0 0 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--teal)
+        }
+
+        .voc-group-title .tam {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #777;
+            margin-left: 8px;
+            text-transform: none
+        }
+
+        .voc-group.g-bro .voc-group-title {
+            border-bottom-color: #2e7d32
+        }
+
+        .voc-group.g-sis .voc-group-title {
+            border-bottom-color: var(--pink)
         }
 
         /* SUBSTATIONS */
@@ -1472,6 +1525,7 @@
             <li><a href="#history">History</a></li>
             <li><a href="#leaders">Leaders</a></li>
             <li><a href="#priests">Priests</a></li>
+            <li><a href="#vocations">Vocations</a></li>
             <li><a href="#festivals">Festivals</a></li>
             <li><a href="#timings">Timings</a></li>
             <li><a href="#churchGallery">Gallery</a></li>
@@ -1484,8 +1538,8 @@
     <header class="hero">
         <div class="hero-bg"></div>
         <div class="hero-saints">
-            <img src="images/stjohn-left.jpeg" class="saint-img" alt="">
-            <img src="images/stjohn-right.jpeg" class="saint-img" alt="">
+            <img src="images/stjohn-left.jpeg" class="saint-img" alt="St. John the Baptist">
+            <img src="images/stjohn-right.jpeg" class="saint-img" alt="St. John the Baptist">
         </div>
         <div class="hero-content">
             <span class="hero-cross">✛</span>
@@ -1515,8 +1569,8 @@
             </div>
             <div class="donation-wrap">
                 <div class="priest-spotlight">
-                    <div class="priest-img-ring"><img src="images/Fr.chinapan.jpeg" alt="Fr. ஆ. சின்னப்பன்"></div>
-                    <div class="p-name">Fr. ஆ. சின்னப்பன்</div>
+                    <div class="priest-img-ring"><img src="images/Fr.chinapan.jpeg" alt="Rev. Fr. A. Chinnappan"></div>
+                    <div class="p-name">Rev. Fr. A. Chinnappan <span class="name-ta">ஆ. சின்னப்பன்</span></div>
                     <div class="p-role">Current Parish Priest</div>
                     <div class="p-mob">📞 &nbsp;9443174242</div>
                 </div>
@@ -1571,26 +1625,40 @@
             <!-- PREMIUM BILINGUAL INFO CARD -->
             <div class="premium-info-card">
                 <div class="pi-head">
-                    <h3>Community & Renovation Updates</h3>
-                    <p class="pi-tamil-title">ஆலயப் புதுப்பித்தல் & சமூகக் குழு விவரங்கள்</p>
+                    <h3>Community &amp; Renovation Updates</h3>
+                    <p class="pi-tamil-title">ஆலயப் புதுப்பித்தல் &amp; சமூகக் குழு விவரங்கள்</p>
                 </div>
                 <div class="pi-body">
                     <div class="pi-grid">
                         <div class="pi-col">
                             <h4>English Instructions</h4>
-                            <p>"Join our dedicated WhatsApp community for official renovation updates, project details, and to clarify any how to donation-related doubts or queries. Stay connected with us as we rebuild our sacred space together."</p>
+                            <p>"Join our dedicated WhatsApp community for official renovation updates and project
+                                details, and to clarify any donation-related doubts or queries. Stay connected with us
+                                as we rebuild our sacred space together."</p>
                         </div>
                         <div class="pi-col">
                             <h4>தமிழ் வழிமுறைகள்</h4>
-                            <p>"ஆலயப் புதுப்பித்தல் தகவல்கள், திட்ட விவரங்கள் மற்றும் நன்கொடை வழங்குவது தொடர்பான உங்கள் சந்தேகங்கள் அல்லது கேள்விகளைத் தீர்த்துக்கொள்ள எமது வாட்ஸ்அப் குழுவில் இணையுங்கள். எமது புனிதப் பணியில் உங்களையும் இணைத்துக் கொள்ளுங்கள்."</p>
+                            <p>"ஆலயப் புதுப்பித்தல் தகவல்கள், திட்ட விவரங்கள் மற்றும் நன்கொடை வழங்குவது தொடர்பான உங்கள்
+                                சந்தேகங்கள் அல்லது கேள்விகளைத் தீர்த்துக்கொள்ள எமது வாட்ஸ்அப் குழுவில் இணையுங்கள். எமது
+                                புனிதப் பணியில் உங்களையும் இணைத்துக் கொள்ளுங்கள்."</p>
                         </div>
                     </div>
                     <div class="pi-footer">
-                        <div class="pi-social-mini" style="margin-bottom: 25px; display: flex; justify-content: center; gap: 20px; align-items: center;">
-                            <span style="font-size: 0.75rem; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-right: 10px;">Follow Us:</span>
-                            <a href="https://www.facebook.com/share/1KfMhzWGF9/" target="_blank" style="color: #1877F2; font-size: 1.4rem; transition: transform .3s ease;"><i class="fab fa-facebook"></i></a>
-                            <a href="https://www.youtube.com/@stjohnthebaptistnpoolampatty" target="_blank" style="color: #FF0000; font-size: 1.4rem; transition: transform .3s ease;"><i class="fab fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/n_poolampatty?igsh=MWh2ajFrendtdTZmcw%3D%3D" target="_blank" style="color: #E4405F; font-size: 1.4rem; transition: transform .3s ease;"><i class="fab fa-instagram"></i></a>
+                        <div class="pi-social-mini"
+                            style="margin-bottom: 25px; display: flex; justify-content: center; gap: 20px; align-items: center;">
+                            <span
+                                style="font-size: 0.75rem; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-right: 10px;">Follow
+                                Us:</span>
+                            <a href="https://www.facebook.com/share/1KfMhzWGF9/" target="_blank"
+                                style="color: #1877F2; font-size: 1.4rem; transition: transform .3s ease;"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/@stjohnthebaptistnpoolampatty" target="_blank"
+                                style="color: #FF0000; font-size: 1.4rem; transition: transform .3s ease;"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/n_poolampatty?igsh=MWh2ajFrendtdTZmcw%3D%3D"
+                                target="_blank"
+                                style="color: #E4405F; font-size: 1.4rem; transition: transform .3s ease;"><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                         <a href="https://chat.whatsapp.com/CNwPiHaQ5C3B1z5Y0bsZ4Z" target="_blank" class="wa-btn-pro">
                             <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Join Community Group / குழுவில்
@@ -1663,30 +1731,33 @@
             </div>
             <div class="leaders-grid">
                 <div class="leader-card">
-                    <img src="images/ThomasPaulsamy.png" class="leader-photo" style="object-position: top" alt="">
-                    <div class="leader-name">Most Rev. Dr. Thomas Paulsamy</div>
-                    <div class="leader-role">First Bishop(2016)</div>
+                    <img src="images/ThomasPaulsamy.png" class="leader-photo" style="object-position: top"
+                        alt="Most Rev. Dr. Thomas Paulsamy">
+                    <div class="leader-name">Most Rev. Dr. Thomas Paulsamy <span class="name-ta">தாமஸ் பவுல்சாமி</span>
+                    </div>
+                    <div class="leader-role">First Bishop (2016)</div>
                 </div>
                 <div class="leader-card">
-                    <img src="images/Pathiyanathan.png" class="leader-photo" alt="">
-                    <div class="leader-name">Rev. Fr. S. Pathiyanathan</div>
-                    <div class="leader-role">First Priest(1958)</div>
+                    <img src="images/Pathiyanathan.png" class="leader-photo" alt="Rev. Fr. S. Pathiyanathan">
+                    <div class="leader-name">Rev. Fr. S. Pathiyanathan <span class="name-ta">S. பத்தியநாதன்</span></div>
+                    <div class="leader-role">First Priest (1958)</div>
                 </div>
                 <div class="leader-card">
                     <img src="images/Photos of Parish - Fr. K.S. Arockiam.jpg" class="leader-photo"
-                        style="object-position: top" alt="">
-                    <div class="leader-name">Rev. Fr. K. S. Arockiam</div>
-                    <div class="leader-role">First Parish Priest(1942)</div>
+                        style="object-position: top" alt="Rev. Fr. K. S. Arockiam">
+                    <div class="leader-name">Rev. Fr. K. S. Arockiam <span class="name-ta">K. S. ஆரோக்கியம்</span></div>
+                    <div class="leader-role">First Parish Priest (1942)</div>
                 </div>
                 <div class="leader-card">
-                    <img src="images/Rev. Fr. Sunder Raj.JPG" class="leader-photo" alt="">
-                    <div class="leader-name">Rev. Fr. T. L. Sundarraj</div>
-                    <div class="leader-role">Old Church Builder(1966)</div>
+                    <img src="images/Rev. Fr. Sunder Raj.JPG" class="leader-photo" alt="Rev. Fr. T. L. Sundarraj">
+                    <div class="leader-name">Rev. Fr. T. L. Sundarraj <span class="name-ta">T. L. சுந்தர்ராஜ்</span>
+                    </div>
+                    <div class="leader-role">Old Church Builder (1966)</div>
                 </div>
                 <div class="leader-card">
-                    <img src="images/Fr.chinapan.jpeg" class="leader-photo" alt="">
-                    <div class="leader-name">Rev. Fr. A.Chinnapan</div>
-                    <div class="leader-role">New Church Builder(2026)</div>
+                    <img src="images/Fr.chinapan.jpeg" class="leader-photo" alt="Rev. Fr. A. Chinnappan">
+                    <div class="leader-name">Rev. Fr. A. Chinnappan <span class="name-ta">ஆ. சின்னப்பன்</span></div>
+                    <div class="leader-role">New Church Builder (2026)</div>
                 </div>
             </div>
         </div>
@@ -1712,100 +1783,106 @@
                     <tbody>
                         <tr>
                             <td>1942 – 1948</td>
-                            <td><strong>Rev. Fr. K. S. Arockiam</strong> (First Parish Priest)</td>
+                            <td><strong>Rev. Fr. K. S. Arockiam</strong> (First Parish Priest)
+                                <span class="name-ta">K. S. ஆரோக்கியம்</span>
+                            </td>
                         </tr>
                         <tr>
                             <td>1948 – 1963</td>
-                            <td>Rev. Fr. M. Ignatius (M. இக்னேஷியஸ்)</td>
+                            <td>Rev. Fr. M. Ignatius <span class="name-ta">M. இக்னேஷியஸ்</span></td>
                         </tr>
                         <tr>
                             <td>1963 – 1965</td>
-                            <td>Rev. Fr. M. Arockiasamy (M. ஆரோக்கியசாமி)</td>
+                            <td>Rev. Fr. M. Arockiasamy <span class="name-ta">M. ஆரோக்கியசாமி</span></td>
                         </tr>
                         <tr>
                             <td>1965 – 1966</td>
-                            <td>Rev. Fr. I. Arockiam (I. ஆரோக்கியம்)</td>
+                            <td>Rev. Fr. I. Arockiam <span class="name-ta">I. ஆரோக்கியம்</span></td>
                         </tr>
                         <tr>
                             <td>1966 – 1974</td>
-                            <td>Rev. Fr. T. L. Sundarraj (T. L. சுந்தர்ராஜ்)</td>
+                            <td>Rev. Fr. T. L. Sundarraj <span class="name-ta">T. L. சுந்தர்ராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>1974 – 1975</td>
-                            <td>Rev. Fr. S. Chinnappan (S. சின்னப்பன்)</td>
+                            <td>Rev. Fr. S. Chinnappan <span class="name-ta">S. சின்னப்பன்</span></td>
                         </tr>
                         <tr>
                             <td>1975 – 1978</td>
-                            <td>Rev. Fr. A. Xavier Dhanaraj (A. சேவியர் தனராஜ்)</td>
+                            <td>Rev. Fr. A. Xavier Dhanaraj <span class="name-ta">A. சேவியர் தனராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>1978 – 1986</td>
-                            <td>Rev. Fr. S. Lourdes Raj (S. லூர்துராஜ்)</td>
+                            <td>Rev. Fr. S. Lourdes Raj <span class="name-ta">S. லூர்துராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>1986 – 1988</td>
-                            <td>Rev. Fr. S. Devaraj (S. தேவராஜ்)</td>
+                            <td>Rev. Fr. S. Devaraj <span class="name-ta">S. தேவராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>1988 – 1990</td>
-                            <td>Rev. Fr. M. Leo Arokia Raj (M. லியோ ஆரோக்கிய ராஜ்)</td>
+                            <td>Rev. Fr. M. Leo Arokia Raj <span class="name-ta">M. லியோ ஆரோக்கிய ராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>1990 – 1997</td>
-                            <td>Rev. Fr. J. Selvaraj (J. செல்வராஜ்)</td>
+                            <td>Rev. Fr. J. Selvaraj <span class="name-ta">J. செல்வராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>1997 – 2003</td>
-                            <td>Rev. Fr. S. Joseph Charles (S. ஜோசப் சார்லஸ்)</td>
+                            <td>Rev. Fr. S. Joseph Charles <span class="name-ta">S. ஜோசப் சார்லஸ்</span></td>
                         </tr>
                         <tr>
                             <td>2003 – 2004</td>
-                            <td>Rev. Fr. S. Ambrose (S. அம்புரோஸ்)</td>
+                            <td>Rev. Fr. S. Ambrose <span class="name-ta">S. அம்புரோஸ்</span></td>
                         </tr>
                         <tr>
                             <td>2004 – 2005</td>
-                            <td>Rev. Fr. L. Edward Raja (L. எட்வர்ட் ராஜா)</td>
+                            <td>Rev. Fr. L. Edward Raja <span class="name-ta">L. எட்வர்ட் ராஜா</span></td>
                         </tr>
                         <tr>
                             <td>2005 – 2007</td>
-                            <td>Rev. Fr. A. Anthonysamy (A. அந்தோணிசாமி)</td>
+                            <td>Rev. Fr. A. Anthonysamy <span class="name-ta">A. அந்தோணிசாமி</span></td>
                         </tr>
                         <tr>
                             <td>2007 – 2009</td>
-                            <td>Rev. Fr. J. Victor Immanuel (J. விக்டர் இம்மானுவேல்)</td>
+                            <td>Rev. Fr. J. Victor Immanuel <span class="name-ta">J. விக்டர் இம்மானுவேல்</span></td>
                         </tr>
                         <tr>
                             <td>2009 – 2011</td>
-                            <td>Rev. Fr. A. Devaraj (A. தேவராஜ்)</td>
+                            <td>Rev. Fr. A. Devaraj <span class="name-ta">A. தேவராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>2011 – 2015</td>
-                            <td>Rev. Fr. M. L. Antony Ramesh (அந்தோணி ரமேசு)</td>
+                            <td>Rev. Fr. M. L. Antony Ramesh <span class="name-ta">M. L. அந்தோணி ரமேசு</span></td>
                         </tr>
                         <tr>
                             <td>2015 – 2016</td>
-                            <td>Rev. Fr. D. Arul Sagaya Raj (D. அருள் சகாயராஜ்)</td>
+                            <td>Rev. Fr. D. Arul Sagaya Raj <span class="name-ta">D. அருள் சகாயராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>2016 – 2017</td>
-                            <td>Rev. Fr. A. Susai Raj (A. சூசை ராஜ்)</td>
+                            <td>Rev. Fr. A. Susai Raj <span class="name-ta">A. சூசை ராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>2017 – 2018</td>
-                            <td>Rev. Fr. Jeyaraj (ஜெயராஜ்)</td>
+                            <td>Rev. Fr. Jeyaraj <span class="name-ta">ஜெயராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>2018 – 2021</td>
-                            <td>Rev. Fr. Thomas Arputharaj (தாமஸ் அற்புதராஜ்)</td>
+                            <td>Rev. Fr. Thomas Arputharaj <span class="name-ta">தாமஸ் அற்புதராஜ்</span></td>
                         </tr>
                         <tr>
                             <td>2021 – 2023</td>
-                            <td>Rev. Fr. Gerald Francis Xavier</td>
+                            <td>Rev. Fr. Gerald Francis Xavier <span class="name-ta">ஜெரால்ட் பிரான்சிஸ் சேவியர்</span>
+                            </td>
                         </tr>
                         <tr class="current-row">
                             <td>2024 – Present</td>
-                            <td>Rev. Fr. ஆ. சின்னப்பன்</td>
-                        </tr>                    </tbody>
+                            <td>Rev. Fr. A. Chinnappan <span class="current-badge">Current</span>
+                                <span class="name-ta">ஆ. சின்னப்பன்</span>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
 
@@ -1814,8 +1891,10 @@
                 <span class="label">Dedicated Service</span>
                 <h2>Convent <em>Sisters</em></h2>
                 <p class="sub">அருட்சகோதரிகள் வரலாறு</p>
-                <p style="max-width: 800px; margin: 15px auto 0; font-size: 0.95rem; color: var(--muted); line-height: 1.6;">
-                    The ICS Convent Sisters have been serving in the parish priest ministry for more than 50 years with dedication and prayerful service.
+                <p
+                    style="max-width: 800px; margin: 15px auto 0; font-size: 0.95rem; color: var(--muted); line-height: 1.6;">
+                    The ICS Convent Sisters have been serving our parish for more than 50 years with dedication and
+                    prayerful service.
                 </p>
                 <hr>
             </div>
@@ -1829,21 +1908,19 @@
                     </thead>
                     <tbody>
                         <tr class="current-row">
+                            <td>2020 – Present</td>
+                            <td>Sr. Michaelammal <span class="name-ta">மிக்கேலம்மாள்</span></td>
+                        </tr>
+                        <tr class="current-row">
+                            <td>2020 – Present</td>
+                            <td>Sr. Rajammal <span class="name-ta">ராஜம்மாள்</span></td>
+                        </tr>
+                        <tr class="current-row">
                             <td>2024 – Present</td>
-                            <td>Sr. விசுவாசம்</td>
-                        </tr>
-                        <tr class="current-row">
-                            <td>2020 – Present</td>
-                            <td>Sr. மிக்கேலம்மாள்</td>
-                        </tr>
-                        <tr class="current-row">
-                            <td>2020 – Present</td>
-                            <td>Sr. ராஜம்மாள்</td>
+                            <td>Sr. Visuvasam <span class="name-ta">விசுவாசம்</span></td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-
             </div>
         </div>
     </section>
@@ -1859,28 +1936,68 @@
                 <p class="sub">ஊரின் அருட்பணியாளர்கள்</p>
                 <hr>
             </div>
-            <div class="vocation-grid">
-                <div class="voc-card">1. Fr. S. Pathiyanathan</div>
-                <div class="voc-card">2. Bishop P. Thomas Paulsamy</div>
-                <div class="voc-card">3. Fr. S. Anthonysamy</div>
-                <div class="voc-card">4. Fr. P. Solomon James (CR)</div>
-                <div class="voc-card">5. Fr. S. Francis Salesia (CSC)</div>
-                <div class="voc-card">6. Fr. P. Daniel Raj (OCD)</div>
-                <div class="voc-card">7. Fr. Francis Salesiyar</div>
-                <div class="voc-card">8. Fr. S. James Sandhiagu</div>
-                <div class="voc-card">9. Fr. S. Vedapodhaga Sagaya Raj</div>
-                <div class="voc-card">10. Fr. P. Yovan (OFM Cap)</div>
-                <div class="voc-card">11. Fr. J. Joseph Vijai</div>
-                <div class="voc-card bro">12. Bro. S. Anthony</div>
-                <div class="voc-card bro">13. Bro. A. Arockia Samy</div>
-                <div class="voc-card bro">14. Bro. A. John Peter</div>
-                <div class="voc-card bro">15. Bro. P. Johnson</div>
-                <div class="voc-card sis">1. Sr. Dasnavis Mary</div>
-                <div class="voc-card sis">2. Sr. S. Lawrence</div>
-                <div class="voc-card sis">3. Sr. Maryam (CIC)</div>
-                <div class="voc-card sis">4. Sr. P. Sandhiya</div>
-                <div class="voc-card sis">5. Sr. A. Christine Sheeba</div>
-                <div class="voc-card sis">6. Sr. A. Arulkumari</div>
+            <div class="voc-group g-pri">
+                <h3 class="voc-group-title">Priests <span class="tam">குருக்கள்</span></h3>
+                <div class="vocation-grid">
+                    <div class="voc-card">1. Fr. S. Pathiyanathan <span class="name-ta">S. பத்தியநாதன்</span></div>
+                    <div class="voc-card">2. Bishop P. Thomas Paulsamy <span class="name-ta">P. தாமஸ் பவுல்சாமி</span>
+                    </div>
+                    <div class="voc-card">3. Fr. S. Anthonysamy <span class="name-ta">S. அந்தோணிசாமி</span></div>
+                    <div class="voc-card">4. Fr. P. Solomon James (CR) <span class="name-ta">P. சாலமன் ஜேம்ஸ்</span>
+                    </div>
+                    <div class="voc-card">5. Fr. S. Francis Salesia (CSC) <span class="name-ta">S. பிரான்சிஸ்
+                            சலேசியா</span></div>
+                    <div class="voc-card">6. Fr. P. Daniel Raj (OCD) <span class="name-ta">P. டேனியல் ராஜ்</span></div>
+                    <div class="voc-card">7. Fr. Francis Salesiyar <span class="name-ta">பிரான்சிஸ் சலேசியர்</span>
+                    </div>
+                    <div class="voc-card">8. Fr. S. James Sandhiagu <span class="name-ta">S. ஜேம்ஸ் சந்தியாகு</span>
+                    </div>
+                    <div class="voc-card">9. Fr. S. Vedapodhaga Sagaya Raj <span class="name-ta">S. வேதபோதக சகாய
+                            ராஜ்</span></div>
+                    <div class="voc-card">10. Fr. P. Yovan (OFM Cap) <span class="name-ta">P. யோவான்</span></div>
+                    <div class="voc-card">11. Fr. J. Joseph Vijai <span class="name-ta">J. ஜோசப் விஜய்</span></div>
+                </div>
+            </div>
+            <div class="voc-group g-bro">
+                <h3 class="voc-group-title">Brothers <span class="tam">அருட்சகோதரர்கள்</span></h3>
+                <div class="vocation-grid">
+                    <div class="voc-card bro">1. Bro. S. Anthony <span class="name-ta">S. அந்தோணி</span></div>
+                    <div class="voc-card bro">2. Bro. A. Arockia Samy <span class="name-ta">A. ஆரோக்கிய சாமி</span>
+                    </div>
+                    <div class="voc-card bro">3. Bro. A. John Peter <span class="name-ta">A. ஜான் பீட்டர்</span></div>
+                    <div class="voc-card bro">4. Bro. P. Johnson <span class="name-ta">P. ஜான்சன்</span></div>
+                </div>
+            </div>
+            <div class="voc-group g-sis">
+                <h3 class="voc-group-title">Sisters <span class="tam">அருட்சகோதரிகள்</span></h3>
+                <div class="vocation-grid">
+                    <div class="voc-card sis">1. Sr. Maryam (CIC) <span class="name-ta">மரியம்</span></div>
+                    <div class="voc-card sis">2. Sr. C. Dasnavis Mary <span class="name-ta">C. தஸ்நேவிஸ் மேரி</span>
+                    </div>
+                    <div class="voc-card sis">3. Sr. Z. Fathima Mary <span class="name-ta">Z. பாத்திமா மேரி</span></div>
+                    <div class="voc-card sis">4. Sr. S. Lawrence <span class="name-ta">S. லாரன்ஸ்</span></div>
+                    <div class="voc-card sis">5. Sr. P. Sandhiya <span class="name-ta">P. சந்தியா</span></div>
+                    <div class="voc-card sis">6. Sr. I. Juliet Josin Mary <span class="name-ta">I. ஜூலியட் ஜோசின்
+                            மேரி</span></div>
+                    <div class="voc-card sis">7. Sr. A. Krisalda Punitha <span class="name-ta">A. கிறிசால்டா
+                            புனிதா</span></div>
+                    <div class="voc-card sis">8. Sr. X. Anglin Arockia Devi <span class="name-ta">X. அங்க்ளின் அரோக்கிய
+                            தேவி</span></div>
+                    <div class="voc-card sis">9. Sr. A. Jayanthi Stella Mary <span class="name-ta">A. ஜெயந்தி ஸ்டெல்லா
+                            மேரி</span></div>
+                    <div class="voc-card sis">10. Sr. A. Merli Padma <span class="name-ta">A. மெர்லி பத்மா</span></div>
+                    <div class="voc-card sis">11. Sr. A. Gloria <span class="name-ta">A. குளோரியா</span></div>
+                    <div class="voc-card sis">12. Sr. S. Anthoni Mary <span class="name-ta">S. அந்தோனி மேரி</span></div>
+                    <div class="voc-card sis">13. Sr. A. Velda <span class="name-ta">A. வெல்டா</span></div>
+                    <div class="voc-card sis">14. Sr. A. Arulkumari <span class="name-ta">A. அருள்குமாரி</span></div>
+                    <div class="voc-card sis">15. Sr. A. Christine Sheeba <span class="name-ta">A. கிறிஸ்டின்
+                            ஷீபா</span></div>
+                    <div class="voc-card sis">16. Sr. A. Gloriya rani <span class="name-ta">A. குளோரியா ஏர்லி</span>
+                    </div>
+                    <div class="voc-card sis">17. Sr. A. Arul kumari <span class="name-ta">A. அ. அருள்குமாரி</span>
+                    </div>
+                    <div class="voc-card sis">18. Sr. S. Arul mariya <span class="name-ta">S. அருள் மரியா/span></div>
+                </div>
             </div>
         </div>
     </section>
@@ -1941,18 +2058,8 @@
                         <div class="f-month">January</div>
                     </div>
                     <div class="fest-body">
-                        <div class="f-name">St. Antone Festival</div>
+                        <div class="f-name">St. Antony Festival</div>
                         <div class="f-tamil">புனித அந்தோணியார் திருவிழா</div>
-                    </div>
-                </div>
-                <div class="fest-card">
-                    <div class="fest-top">
-                        <div class="f-date">Jun 24</div>
-                        <div class="f-month">June · Patron Saint</div>
-                    </div>
-                    <div class="fest-body">
-                        <div class="f-name">Birthday of St. John the Baptist</div>
-                        <div class="f-tamil">புனித ஸ்நாபக அருளப்பர் பிறந்தநாள்</div>
                     </div>
                 </div>
                 <div class="fest-card">
@@ -1963,6 +2070,16 @@
                     <div class="fest-body">
                         <div class="f-name">Madha Festival</div>
                         <div class="f-tamil">மாதா திருவிழா</div>
+                    </div>
+                </div>
+                <div class="fest-card">
+                    <div class="fest-top">
+                        <div class="f-date">Jun 24</div>
+                        <div class="f-month">June · Patron Saint</div>
+                    </div>
+                    <div class="fest-body">
+                        <div class="f-name">Birthday of St. John the Baptist</div>
+                        <div class="f-tamil">புனித ஸ்நாபக அருளப்பர் பிறந்தநாள்</div>
                     </div>
                 </div>
             </div>
@@ -2013,7 +2130,7 @@
                         </div>
                     </div>
                     <div class="special-prayers">
-                        <strong>Special Holy Mass & Novena</strong>
+                        <strong>Special Holy Mass &amp; Novena</strong>
                         Novena Prayer (நவநாள் பிரார்த்தனை) with special prayers for:
                         <ul>
                             <li>Health issues</li>
@@ -2114,7 +2231,8 @@
             <div class="map-wrap">
                 <iframe
                     src="https://maps.google.com/maps?q=N.%20Poolampatty,%20Tiruchirappalli,%20Tamil%20Nadu&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                    title="St. John the Baptist Church location map"></iframe>
             </div>
         </div>
     </section>
@@ -2151,6 +2269,7 @@
                     <a href="#history" class="footer-link">→ Church History</a>
                     <a href="#leaders" class="footer-link">→ Spiritual Leaders</a>
                     <a href="#priests" class="footer-link">→ Parish Priest History</a>
+                    <a href="#vocations" class="footer-link">→ Native Vocations</a>
                     <a href="#festivals" class="footer-link">→ Annual Festivals</a>
                     <a href="#location" class="footer-link">→ Location &amp; Map</a>
                 </div>
@@ -2161,9 +2280,6 @@
             </div>
         </div>
     </footer>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         (function () {
